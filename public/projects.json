@@ -1,0 +1,35 @@
+[
+    {
+        "name": "Resume webpage",
+        "image": "next.svg",
+        "isHighlighted": true,
+        "shortDescription": "lorem ipsum",
+        "description": "long lorem ipsum",
+        "techStack": ["next", "i18n", "tailwind", "GH Actions"],
+        "time": "2023-01-02",
+        "repo": "https://github.com/marcol13/mkrueger.pl",
+        "colab": []
+    },
+    {
+        "name": "Squash Tournament Generator",
+        "image": "next.svg",
+        "isHighlighted": true,
+        "shortDescription": "lorem ipsum",
+        "description": "long lorem ipsum",
+        "techStack": ["react", "node.js", "tailwind", "styled-components", "GH Actions"],
+        "time": "2020-03-01",
+        "repo": "https://github.com/marcol13/mkrueger.pl",
+        "colab": []
+    },
+    {
+        "name": "Cathedral",
+        "image": "next.svg",
+        "isHighlighted": false,
+        "shortDescription": "lorem ipsum",
+        "description": "long lorem ipsum",
+        "techStack": ["c++", "cmake", "openGL"],
+        "time": "2019-05-22",
+        "repo": "https://github.com/marcol13/mkrueger.pl",
+        "colab": ["mackurzawa"]
+    }
+]
