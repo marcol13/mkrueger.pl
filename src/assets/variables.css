@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-ivory: #F2F2F2;
+  --color-charcoal: #0D0D0D;
+  --color-yellow: #F2CF1D;
+  --color-green: #17A68C;
+  --color-beige: #D9CA82;
+}
+
+html {
+    --color-background: var(--color-ivory);
+    --color-text: var(--color-charcoal);
+    --color-primary: var(--color-yellow);
+    --color-secondary: var(--color-green);
+    --color-accent: var(--color-beige);
+}
+
+html.dark {
+    --color-background: var(--color-charcoal);
+    --color-text: var(--color-ivory);
+    --color-primary: var(--color-yellow);
+    --color-secondary: var(--color-green);
+    --color-accent: var(--color-beige);
+}
