@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const Footer = () => {
   return (
-    <footer className="flex flex-col items-center justify-center gap-2 py-6 border-t-2 border-black">
+    <footer className="flex flex-col items-center justify-center h-navbar-height gap-2 border-t-[1px] border-content">
       <div>
         <ul className="flex list-none gap-2">
           <li>

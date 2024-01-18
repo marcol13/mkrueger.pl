@@ -14,7 +14,11 @@ const config: Config = {
         'primary': 'var(--color-primary)',
         'secondary': 'var(--color-secondary)',
         'accent': 'var(--color-accent)',
-      }
+      },
+      spacing: {
+        'navbar-height': 'var(--navbar-height)',
+        'page-width': 'var(--page-max-width)',
+      },
     },
   },
   darkMode: 'class',

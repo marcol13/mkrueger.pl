@@ -1,0 +1,11 @@
+{
+    "message-header": "Let's talk about everything!",
+    "message-subheader": "Don't like forms? Write me an email! 🥳",
+    "form": {
+        "name": "Your name",
+        "email": "E-mail address",
+        "subject": "Subject",
+        "message": "Message",
+        "submit": "Send message"
+    }
+}

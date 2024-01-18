@@ -13,7 +13,7 @@ export const Navbar = () => {
   const { t } = useTranslation(locale, "common");
 
   return (
-    <header className="flex items-center justify-around py-6 border-b-2 border-black fixed top-0 w-screen bg-white">
+    <header className="flex items-center justify-around h-navbar-height border-b-[1px] border-content fixed top-0 w-screen bg-white">
       <div className="flex">
         <span className="flex items-center justify-center before:mr-2 before:rounded-full before:content-[''] before:block before:h-4 before:w-4 before:bg-yellow-500"></span>
         <Link href="#">

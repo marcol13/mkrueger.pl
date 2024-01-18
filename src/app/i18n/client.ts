@@ -28,8 +28,8 @@ i18next
     preload: runsOnServerSide ? locales : [],
   });
 
-export function useTranslation(lng: LocaleTypes, ns: string) {
-  const translator = useTransAlias(ns);
+export function useTranslation(lng: LocaleTypes, ns: string, options?: any) {
+  const translator = useTransAlias(ns, options);
   const {i18n} = translator;
 
   // Run when content is rendered on server side
@@ -40,6 +40,7 @@ export function useTranslation(lng: LocaleTypes, ns: string) {
     // eslint-disable-next-line react-hooks/rules-of-hooks
     useCustomTranslationImplem(i18n, lng);
   }
+
   return translator;
 }
 
