@@ -13,8 +13,6 @@ export const About = () => {
 	const locale = useParams()?.lang as LocaleTypes;
 	const { t } = useTranslation(locale, "about");
 
-	console.log(t("paragraphs", { returnObjects: true }));
-
 	return (
 		<Page id="about">
 			<main className="grid grid-cols-2">

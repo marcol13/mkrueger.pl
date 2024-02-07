@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Text } from "../Text/Text";
+import { TechIcon } from "../TechIcon/TechIcon";
 
 type PropTypes = {
   title: string;
@@ -25,12 +26,11 @@ export const ProjectItem = ({
             {title}
           </Text>
           <Text>
-            {/* <span className="bold">Opis: </span> */}
             {shortDesc}
           </Text>
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-wrap gap-2">
             {techStack.map((el: string) => (
-              <p key={el}>{el}</p>
+              <TechIcon key={el} name={el} />
             ))}
           </div>
         </div>
