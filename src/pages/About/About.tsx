@@ -7,6 +7,7 @@ import { Text } from "@/components/Text/Text";
 import { Tag } from "@/components/Tag/Tag";
 import { Button } from "@/components/Button/Button";
 import { useTranslation } from "@/app/i18n/client";
+import photo from "@/../public/images/me.jpg";
 import Image from "next/image";
 
 export const About = () => {
@@ -17,7 +18,7 @@ export const About = () => {
 		<Page id="about">
 			<main className="grid grid-cols-2">
 				<Image
-					src="/images/me.jpg"
+					src={photo}
 					alt="Marcin Krueger photo"
 					width="512"
 					height="512"
