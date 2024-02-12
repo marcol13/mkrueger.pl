@@ -35,10 +35,12 @@ export const ProjectItem = ({
 					// onError={() => setImageSource("@/assets/images/project-template.png")}
 				/>
 				<div className="flex flex-col gap-4 justify-between basis-full">
-					<Text variant="h3" className="underline text-center">
-						{title}
-					</Text>
-					<Text>{shortDesc}</Text>
+					<div>
+						<Text variant="h3" className="underline text-center">
+							{title}
+						</Text>
+						<Text className="mt-4">{shortDesc}</Text>
+					</div>
 					<div className="flex flex-wrap gap-2 justify-end">
 						{techStack.map((el: string) => (
 							<TechIcon key={el} name={el} />

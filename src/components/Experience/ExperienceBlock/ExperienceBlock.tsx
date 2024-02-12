@@ -3,9 +3,10 @@ import { ExperienceItemType } from "@/utils/types/ExperienceType";
 
 type PropTypes = {
 	data: ExperienceItemType[];
+	blockType: string;
 };
 
-export const ExperienceBlock = ({ data }: PropTypes) => {
+export const ExperienceBlock = ({ data, blockType }: PropTypes) => {
 	return (
 		<div className="bg-slate-100 p-4 h-full rounded">
 			<ul>
@@ -16,6 +17,7 @@ export const ExperienceBlock = ({ data }: PropTypes) => {
 						dates={dates}
 						position={position}
 						description={description}
+						blockType={blockType}
 						key={name}
 					/>
 				))}

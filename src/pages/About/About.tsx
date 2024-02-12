@@ -1,18 +1,15 @@
 "use client";
 
-import { useParams } from "next/navigation";
-import { LocaleTypes } from "@/app/i18n/settings";
 import { Page } from "@/components/Page/Page";
 import { Text } from "@/components/Text/Text";
 import { Tag } from "@/components/Tag/Tag";
 import { Button } from "@/components/Button/Button";
-import { useTranslation } from "@/app/i18n/client";
+import { useDictionary } from "@/utils/hooks/useDictionary";
 import photo from "@/../public/images/me.jpg";
 import Image from "next/image";
 
 export const About = () => {
-	const locale = useParams()?.lang as LocaleTypes;
-	const { t } = useTranslation(locale, "about");
+	const t = useDictionary();
 
 	return (
 		<Page id="about" fullHeight>
@@ -25,9 +22,9 @@ export const About = () => {
 					className="rounded-full"
 				/>
 				<div className="flex flex-col gap-6">
-					<Text variant="h2">{t("hello")}</Text>
+					<Text variant="h2">{t("about.hello")}</Text>
 					<div className="flex flex-col gap-2">
-						{(t("paragraphs", { returnObjects: true }) as string[])?.map(
+						{(t("about.paragraphs", { returnObjects: true }) as string[])?.map(
 							(paragraph: string, index: number) => (
 								<Text key={index}>{paragraph}</Text>
 							)

@@ -2,30 +2,36 @@
 
 import { Page } from "@/components/Page/Page";
 import { ProjectItem } from "@/components/ProjectItem/ProjectItem";
-import { useTranslation } from "@/app/i18n/client";
-import { useParams } from "next/navigation";
-import { LocaleTypes } from "@/app/i18n/settings";
+import { Button } from "@/components/Button/Button";
+import { useDictionary } from "@/utils/hooks/useDictionary";
 import projects from "@/../public/projects.json";
 
 export const Portfolio = () => {
-	const locale = useParams()?.locale as LocaleTypes;
-	const { t } = useTranslation(locale, "common");
+	const t = useDictionary();
 
 	return (
 		<Page id="projects" title={t("sections.projects")}>
-			<div className="flex flex-col gap-6">
-				{projects
-					.filter((p) => p.isHighlighted === true)
-					.map((el) => (
-						<ProjectItem
-							img={el.image}
-							title={el.name}
-							shortDesc={el.shortDescription}
-							techStack={el.techStack}
-							key={el.name}
-						/>
-					))}
-			</div>
+			<>
+				<div className="flex flex-col gap-6">
+					{projects
+						.filter((p) => p.isHighlighted === true)
+						.map((el) => (
+							<ProjectItem
+								img={el.image}
+								title={el.name}
+								shortDesc={el.shortDescription}
+								techStack={el.techStack}
+								key={el.name}
+							/>
+						))}
+				</div>
+				<div className="flex justify-center">
+				<Button className="mt-6 py-4 w-full">
+					{t("portfolio.seeMore")}
+				</Button>
+
+				</div>
+			</>
 		</Page>
 	);
 };
