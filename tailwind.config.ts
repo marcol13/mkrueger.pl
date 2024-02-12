@@ -23,7 +23,9 @@ const config: Config = {
         'contact': '1fr 2fr'
       },
       backgroundImage: {
-        'dots': "url('icons/dots.svg')"
+        'dots': "url('icons/dots.svg')",
+        'edu': "url('icons/education.svg')",
+        'work': "url('icons/screen.svg')"
       }
     },
   },
