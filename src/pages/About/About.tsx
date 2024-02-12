@@ -15,7 +15,7 @@ export const About = () => {
 	const { t } = useTranslation(locale, "about");
 
 	return (
-		<Page id="about">
+		<Page id="about" fullHeight>
 			<main className="grid grid-cols-2">
 				<Image
 					src={photo}
