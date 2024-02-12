@@ -5,6 +5,11 @@
       "experience": "Experience",
       "contact": "Contact"
     },
+    "sections": {
+      "projects": "Portfolio",
+      "experience": "Experience",
+      "contact": "Contact"
+    },
     "title": "Marcin Krueger • Resume"
   }
   

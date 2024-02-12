@@ -1,9 +1,14 @@
 {
-  "navbar": {
-    "about": "O mnie",
-    "projects": "Portfolio",
-    "experience": "Doświadczenie",
-    "contact": "Kontakt"
-  },
-  "title": "Marcin Krueger • Resume"
+	"navbar": {
+		"about": "O mnie",
+		"projects": "Portfolio",
+		"experience": "Doświadczenie",
+		"contact": "Kontakt"
+	},
+	"sections": {
+		"projects": "Portfolio",
+		"experience": "Doświadczenie",
+		"contact": "Kontakt"
+	},
+	"title": "Marcin Krueger • Resume"
 }

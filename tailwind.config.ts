@@ -19,6 +19,12 @@ const config: Config = {
         'navbar-height': 'var(--navbar-height)',
         'page-width': 'var(--page-max-width)',
       },
+      gridTemplateColumns: {
+        'contact': '1fr 2fr'
+      },
+      backgroundImage: {
+        'dots': "url('icons/dots.svg')"
+      }
     },
   },
   darkMode: 'class',

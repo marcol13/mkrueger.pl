@@ -13,22 +13,22 @@ export const Contact = () => {
 	const { t } = useTranslation(locale, "contact");
 
   return (
-    <Page id="contact">
-      <div className="grid grid-cols-2 gap-4">
-        <div>
-          <Text variant="p">{t("message-header")}</Text>
+    <Page id="contact" title="Contact">
+      <div className="grid grid-cols-contact gap-4">
+        <div className="p-4">
+          <Text variant="h3">{t("message-header")}</Text>
           <Text variant="p">
             {t("message-subheader")}
           </Text>
         </div>
-        <form>
+        <form className="p-4">
           <div className="grid grid-cols-2 gap-4">
             <Input label={t("form.name")} />
             <Input label={t("form.email")} type="email" />
             <Input label={t("form.subject")} className="col-start-1 col-end-3" />
             <Input label={t("form.message")} type="longText" className="col-start-1 col-end-3"/>
           </div>
-          <Button>{t("form.submit")}</Button>
+          <Button className="mt-4">{t("form.submit")}</Button>
         </form>
       </div>
     </Page>

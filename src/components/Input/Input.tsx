@@ -1,3 +1,5 @@
+import { useId } from "react";
+
 type PropTypes = {
   label: string;
   type?: "text" | "longText" | "email";
@@ -5,18 +7,20 @@ type PropTypes = {
 };
 
 export const Input = ({ label, type = "text", className }: PropTypes) => {
+  const id = useId();
+
   return (
     <div className={`flex flex-col ${className ?? ""}`}>
       <label
-        htmlFor={label}
-        className="border-b-[1px] border-slate-400 max-w-[50%]"
+        htmlFor={id}
+        className="text-slate-2 font-semibold text-lg"
       >
         {label}
       </label>
       {type === "longText" ? (
-        <textarea id={label} className="rounded h-8 pl-2 resize-none"></textarea>
+        <textarea id={id} className="rounded h-40 pl-2 resize-none border-2 bg-slate-100"></textarea>
       ) : (
-        <input type={type} id={label} className="rounded h-8 pl-2" />
+        <input type={type} id={id} className="rounded h-10 pl-2 border-2 bg-slate-100" />
       )}
     </div>
   );
