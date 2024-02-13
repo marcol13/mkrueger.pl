@@ -10,7 +10,7 @@ export const Contact = () => {
   const t = useDictionary();
 
   return (
-    <Page id="contact" title="Contact">
+    <Page id="contact" title={t("sections.contact")}>
       <div className="grid grid-cols-contact gap-4">
         <div className="p-4">
           <Text variant="h3">{t("contact.message-header")}</Text>

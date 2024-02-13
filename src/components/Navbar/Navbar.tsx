@@ -1,16 +1,13 @@
 "use client";
 
-import { useParams } from "next/navigation";
-import { useTranslation } from "@/app/i18n/client";
-import { LocaleTypes } from "@/app/i18n/settings";
 import { Text } from "../Text/Text";
 import { DarkModeSwitch } from "@/components/Switch/DarkModeSwitch";
 import { LanguageSwitch } from "../Switch/LanguageSwitch";
+import { useDictionary } from "@/utils/hooks/useDictionary";
 import Link from "next/link";
 
 export const Navbar = () => {
-  const locale = useParams()?.lang as LocaleTypes;
-  const { t } = useTranslation(locale, "common");
+  const t = useDictionary();
 
   return (
     <header className="flex items-center justify-around h-navbar-height border-b-[1px] border-content fixed top-0 w-screen bg-white z-50">
