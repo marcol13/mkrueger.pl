@@ -26,7 +26,7 @@ export const Portfolio = () => {
 						))}
 				</div>
 				<div className="flex justify-center">
-				<Button className="mt-6 py-4 w-full">
+				<Button className="mt-6 py-4 w-full font-semibold dark:text-accent">
 					{t("portfolio.seeMore")}
 				</Button>
 

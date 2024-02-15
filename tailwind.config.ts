@@ -14,6 +14,7 @@ const config: Config = {
         'primary': 'var(--color-primary)',
         'secondary': 'var(--color-secondary)',
         'accent': 'var(--color-accent)',
+        'box': 'var(--color-box)'
       },
       spacing: {
         'navbar-height': 'var(--navbar-height)',

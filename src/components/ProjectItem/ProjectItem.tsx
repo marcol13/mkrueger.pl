@@ -23,7 +23,7 @@ export const ProjectItem = ({
 
 	return (
 		<div className={className}>
-			<div className="flex gap-2 border-2 p-2">
+			<div className="flex gap-2 border-2 p-2 bg-box">
 				<Image
 					src={defaultImage}
 					alt={`Project ${title}`}

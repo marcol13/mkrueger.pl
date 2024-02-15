@@ -9,6 +9,8 @@
   --color-yellow: #F2CF1D;
   --color-green: #17A68C;
   --color-beige: #D9CA82;
+  --color-box-dark: #1E293B;
+  --color-box-light: #F1F5F9;
 
   /* Sizes */
   --navbar-height: 6rem;
@@ -21,6 +23,7 @@ html {
     --color-primary: var(--color-yellow);
     --color-secondary: var(--color-green);
     --color-accent: var(--color-beige);
+    --color-box: var(--color-box-light);
 }
 
 html.dark {
@@ -29,4 +32,5 @@ html.dark {
     --color-primary: var(--color-yellow);
     --color-secondary: var(--color-green);
     --color-accent: var(--color-beige);
+    --color-box: var(--color-box-dark);
 }

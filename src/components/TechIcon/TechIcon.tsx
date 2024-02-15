@@ -7,7 +7,7 @@ type PropTypes = {
 
 export const TechIcon = ({ name }: PropTypes) => {
     return (
-        <div className="flex flex-row items-center gap-2 p-1 border rounded">
+        <div className="flex flex-row items-center gap-2 p-1 border rounded bg-white dark:text-background">
             <Image
                 src={technologies[name]?.icon ? require(`@/assets/tech/${technologies[name]?.icon}`) : require(`@/assets/tech/default.png`)}
                 alt={technologies[name]?.name ?? name}

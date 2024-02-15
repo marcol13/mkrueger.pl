@@ -8,7 +8,7 @@ type PropTypes = {
 
 export const Button = ({children, onClick, className}: PropTypes) => {
     return (
-        <button onClick={onClick} className={`p-2 border-2 border-slate-2 rounded ${className ?? ""}`}>
+        <button onClick={onClick} className={`p-2 border-2 border-slate-2 rounded bg-box ${className ?? ""}`}>
             {children}
         </button>
     )

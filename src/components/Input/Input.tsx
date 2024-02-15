@@ -18,9 +18,9 @@ export const Input = ({ label, type = "text", className }: PropTypes) => {
         {label}
       </label>
       {type === "longText" ? (
-        <textarea id={id} className="rounded h-40 pl-2 resize-none border-2 bg-slate-100"></textarea>
+        <textarea id={id} className="rounded h-40 pl-2 resize-none border-2 bg-box"></textarea>
       ) : (
-        <input type={type} id={id} className="rounded h-10 pl-2 border-2 bg-slate-100" />
+        <input type={type} id={id} className="rounded h-10 pl-2 border-2 bg-box" />
       )}
     </div>
   );

@@ -25,7 +25,7 @@ export const Contact = () => {
             <Input label={t("contact.form.subject")} className="col-start-1 col-end-3" />
             <Input label={t("contact.form.message")} type="longText" className="col-start-1 col-end-3"/>
           </div>
-          <Button className="mt-4">{t("contact.form.submit")}</Button>
+          <Button className="mt-4 font-semibold dark:text-accent">{t("contact.form.submit")}</Button>
         </form>
       </div>
     </Page>

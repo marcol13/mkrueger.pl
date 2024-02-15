@@ -30,7 +30,7 @@ export const DarkModeSwitch = () => {
         setIsDarkMode((prev) => !prev);
       }}
     >
-      <Icon variant={isDarkMode ? "moon" : "sun"} size="l" />
+      <Icon variant={isDarkMode ? "moon" : "sun"} size="l" color="content" />
     </Button>
   );
 };

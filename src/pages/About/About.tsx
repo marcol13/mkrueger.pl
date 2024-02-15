@@ -22,7 +22,7 @@ export const About = () => {
 					className="rounded-full"
 				/>
 				<div className="flex flex-col gap-6">
-					<Text variant="h2">{t("about.hello")}</Text>
+					<Text variant="h2" className="text-secondary dark:text-primary">{t("about.hello")}</Text>
 					<div className="flex flex-col gap-2">
 						{(t("about.paragraphs", { returnObjects: true }) as string[])?.map(
 							(paragraph: string, index: number) => (
@@ -44,7 +44,7 @@ export const About = () => {
 							<Tag>Git</Tag>
 						</div>
 					</div>
-					<Button>Pobierz CV</Button>
+					<Button className="font-semibold dark:text-accent">Pobierz CV</Button>
 				</div>
 			</main>
 		</Page>

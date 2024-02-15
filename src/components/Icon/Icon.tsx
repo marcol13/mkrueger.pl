@@ -15,9 +15,10 @@ const colorVariants = {
   black: "text-black",
   grey: "text-slate-700",
   white: "text-white",
-  primary: "text-red-500",
-  secondary: "text-red-600",
+  primary: "text-primary",
+  secondary: "text-secondary",
   accent: "text-red-700",
+  content: "text-content"
 };
 
 const sizeVariants = {

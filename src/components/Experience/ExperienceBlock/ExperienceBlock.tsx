@@ -8,7 +8,7 @@ type PropTypes = {
 
 export const ExperienceBlock = ({ data, blockType }: PropTypes) => {
 	return (
-		<div className="bg-slate-100 p-4 h-full rounded">
+		<div className="bg-box p-4 h-full rounded">
 			<ul>
 				{data.map(({ name, location, position, dates, description }) => (
 					<ExperienceItem
