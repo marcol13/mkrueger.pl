@@ -29,7 +29,7 @@ export const ProjectItem = ({
 					alt={`Project ${title}`}
 					width={256}
 					height={256}
-					className="rounded-md mr-8"
+					className="rounded-md mr-8 hidden md:block"
 					// placeholder="blur"
 					// blurDataURL="../../assets/images/project-template.png"
 					// onError={() => setImageSource("@/assets/images/project-template.png")}
@@ -41,7 +41,7 @@ export const ProjectItem = ({
 						</Text>
 						<Text className="mt-4">{shortDesc}</Text>
 					</div>
-					<div className="flex flex-wrap gap-2 justify-end">
+					<div className="flex flex-wrap gap-1 justify-start md:gap-2 md:justify-end">
 						{techStack.map((el: string) => (
 							<TechIcon key={el} name={el} />
 						))}

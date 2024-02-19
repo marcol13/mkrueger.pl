@@ -13,16 +13,20 @@ export const About = () => {
 
 	return (
 		<Page id="about" fullHeight>
-			<main className="grid grid-cols-2">
-				<Image
-					src={photo}
-					alt="Marcin Krueger photo"
-					width="512"
-					height="512"
-					className="rounded-full"
-				/>
+			<main className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-4">
+				<div className="flex justify-center items-start">
+					<Image
+						src={photo}
+						alt="Marcin Krueger photo"
+						width="512"
+						height="512"
+						className="rounded-full"
+					/>
+				</div>
 				<div className="flex flex-col gap-6">
-					<Text variant="h2" className="text-secondary dark:text-primary">{t("about.hello")}</Text>
+					<Text variant="h2" className="text-secondary dark:text-primary">
+						{t("about.hello")}
+					</Text>
 					<div className="flex flex-col gap-2">
 						{(t("about.paragraphs", { returnObjects: true }) as string[])?.map(
 							(paragraph: string, index: number) => (

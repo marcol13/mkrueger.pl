@@ -9,7 +9,7 @@ export const Text = ({ variant = "p", className, children }: PropTypes) => {
   const Component = variant;
   const classNameStyles = {
     h1: "text-3xl font-bold",
-    h2: "text-5xl font-bold",
+    h2: "text-4xl md:text-5xl font-bold",
     h3: "text-2xl font-bold",
     h4: "text-xl font-bold",
     h5: "text-base font-bold",

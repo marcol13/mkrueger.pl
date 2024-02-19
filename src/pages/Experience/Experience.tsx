@@ -9,7 +9,7 @@ export const Experience = () => {
 
     return (
         <Page id="experience" title={t("sections.experience")}>
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
                 {
                     experience.map((block) => <ExperienceBlock data={block.items} blockType={block.name} key={block.name} />)
                 }

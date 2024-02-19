@@ -37,12 +37,12 @@ type PropTypes = {
 
 export const Icon = ({
   variant,
-  color = "grey",
+  color,
   size = "m",
   className,
 }: PropTypes) => {
   const Component = iconVariants[variant];
-  const styles = [colorVariants[color], className]
+  const styles = [color && colorVariants[color], className]
     .filter((el) => el !== undefined)
     .join(" ");
 

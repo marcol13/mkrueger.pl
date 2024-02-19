@@ -12,7 +12,7 @@ export const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Icon variant="github" size="l" color="secondary" />
+              <Icon variant="github" size="l" className="text-secondary dark:text-primary" />
             </Link>
           </li>
           <li>
@@ -21,7 +21,7 @@ export const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Icon variant="linkedin" size="l" color="secondary" />
+              <Icon variant="linkedin" size="l" className="text-secondary dark:text-primary" />
             </Link>
           </li>
           <li>
@@ -30,12 +30,12 @@ export const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Icon variant="twitter" size="l" color="secondary" />
+              <Icon variant="twitter" size="l" className="text-secondary dark:text-primary" />
             </Link>
           </li>
         </ul>
       </div>
-      <div>
+      <p className="text-center">
         Copyright &copy; 2024; Designed and implemented by{" "}
         <Link
           href="https://github.com/marcol13"
@@ -45,7 +45,7 @@ export const Footer = () => {
         >
           @marcol13
         </Link>
-      </div>
+      </p>
     </footer>
   );
 };
