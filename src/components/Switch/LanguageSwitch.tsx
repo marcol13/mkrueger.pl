@@ -9,7 +9,11 @@ import {
 } from "next/navigation";
 import { locales } from "@/app/i18n/settings";
 
-export const LanguageSwitch = () => {
+type PropTypes = {
+  className ?: string
+}
+
+export const LanguageSwitch = ({className} : PropTypes) => {
   const [lang, setLang] = useState("pl");
   const params = useParams();
 
@@ -30,7 +34,7 @@ export const LanguageSwitch = () => {
   const router = useRouter();
 
   return (
-    <div className="flex gap-2">
+    <div className={`flex gap-2 ${className ? className : ""}`}>
       <button
         onClick={() => {
           if (lang !== "pl") router.push(`/pl`);

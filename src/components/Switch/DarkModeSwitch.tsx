@@ -29,7 +29,7 @@ export const DarkModeSwitch = () => {
         setTheme(theme === "dark" ? "light" : "dark")
         setIsDarkMode((prev) => !prev);
       }}
-      className="ring-1 shadow-zinc-800/5 shadow-lg border-none bg-white/90 dark:bg-box"
+      variant="header"
     >
       <Icon variant={isDarkMode ? "sun" : "moon"} size="l" className="text-slate-300 dark:text-slate-500" />
     </Button>
