@@ -3,5 +3,9 @@ type PropTypes = {
 };
 
 export const Tag = ({ children }: PropTypes) => {
-  return <p className="border-[1px] border-slate-400 rounded inline-block px-2">{children}</p>;
+  return (
+    <p className="inline-block rounded border-[1px] border-slate-400 px-2">
+      {children}
+    </p>
+  );
 };

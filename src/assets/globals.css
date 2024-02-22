@@ -3,9 +3,10 @@
 @tailwind utilities;
 
 html {
-	scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
-input:focus-visible, textarea:focus-visible{
-	outline: none;
+input:focus-visible,
+textarea:focus-visible {
+  outline: none;
 }

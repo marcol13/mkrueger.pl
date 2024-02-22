@@ -10,10 +10,10 @@ import {
 import { locales } from "@/app/i18n/settings";
 
 type PropTypes = {
-  className ?: string
-}
+  className?: string;
+};
 
-export const LanguageSwitch = ({className} : PropTypes) => {
+export const LanguageSwitch = ({ className }: PropTypes) => {
   const [lang, setLang] = useState("pl");
   const params = useParams();
 
@@ -45,10 +45,10 @@ export const LanguageSwitch = ({className} : PropTypes) => {
         <Image
           src={poland}
           alt="polish language picker"
-          className={`w-8 h-8 ${lang !== "pl" && inactive}`}
+          className={`h-8 w-8 ${lang !== "pl" && inactive}`}
         />
       </button>
-      <span className="w-[1px] bg-slate-400 relative top-0 left-0 block"></span>
+      <span className="relative left-0 top-0 block w-[1px] bg-slate-400"></span>
       <button
         onClick={() => {
           if (lang !== "en") router.push(`/en`);
@@ -59,7 +59,7 @@ export const LanguageSwitch = ({className} : PropTypes) => {
         <Image
           src={brittain}
           alt="english language picker"
-          className={`w-8 h-8 ${lang !== "en" && inactive}`}
+          className={`h-8 w-8 ${lang !== "en" && inactive}`}
         />
       </button>
     </div>

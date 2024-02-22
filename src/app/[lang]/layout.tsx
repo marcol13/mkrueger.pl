@@ -10,33 +10,33 @@ import { Footer } from "@/components/Footer/Footer";
 const font = Fira_Sans({ weight: ["400", "500", "700"], subsets: ["latin"] });
 
 export const metadata: Metadata = {
-	title: "Marcin Krueger • Resume",
-	description:
-		"Frontend developer and machine learning/devops enthusiast. I possess skills in creating responsive interfaces. Explore my abilities and projects on my professional online CV.",
+  title: "Marcin Krueger • Resume",
+  description:
+    "Frontend developer and machine learning/devops enthusiast. I possess skills in creating responsive interfaces. Explore my abilities and projects on my professional online CV.",
 };
 
 export default function RootLayout({
-	children,
-	params: { lang },
+  children,
+  params: { lang },
 }: {
-	children: React.ReactNode;
-	params: { lang: LocaleTypes };
+  children: React.ReactNode;
+  params: { lang: LocaleTypes };
 }) {
-	return (
-		<html
-			lang={lang}
-			// style={{ colorScheme: "light" }} // <--
-			// className={"light"}
-		>
-			<body className={font.className}>
-				<ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-					<Navbar />
-					<div className="flex flex-col max-w-page-width mx-auto">
-						{children}
-					</div>
-					<Footer />
-				</ThemeProvider>
-			</body>
-		</html>
-	);
+  return (
+    <html
+      lang={lang}
+      // style={{ colorScheme: "light" }} // <--
+      // className={"light"}
+    >
+      <body className={font.className}>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <Navbar />
+          <div className="mx-auto flex max-w-page-width flex-col">
+            {children}
+          </div>
+          <Footer />
+        </ThemeProvider>
+      </body>
+    </html>
+  );
 }

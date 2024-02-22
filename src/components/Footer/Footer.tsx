@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const Footer = () => {
   return (
-    <footer className="flex flex-col items-center justify-center h-navbar-height gap-2 border-t-[1px] border-content">
+    <footer className="flex h-navbar-height flex-col items-center justify-center gap-2 border-t-[1px] border-content">
       <div>
         <ul className="flex list-none gap-2">
           <li>
@@ -12,7 +12,11 @@ export const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Icon variant="github" size="l" className="text-secondary dark:text-primary" />
+              <Icon
+                variant="github"
+                size="l"
+                className="text-secondary dark:text-primary"
+              />
             </Link>
           </li>
           <li>
@@ -21,7 +25,11 @@ export const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Icon variant="linkedin" size="l" className="text-secondary dark:text-primary" />
+              <Icon
+                variant="linkedin"
+                size="l"
+                className="text-secondary dark:text-primary"
+              />
             </Link>
           </li>
           <li>
@@ -30,7 +38,11 @@ export const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Icon variant="twitter" size="l" className="text-secondary dark:text-primary" />
+              <Icon
+                variant="twitter"
+                size="l"
+                className="text-secondary dark:text-primary"
+              />
             </Link>
           </li>
         </ul>

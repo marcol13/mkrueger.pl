@@ -16,15 +16,16 @@ export function middleware(request: NextRequest) {
       new URL(
         pathname.replace(
           `/${fallbackLng}`,
-          pathname === `/${fallbackLng}` ? "/" : ""
+          pathname === `/${fallbackLng}` ? "/" : "",
         ),
-        request.url
-      )
+        request.url,
+      ),
     );
   }
 
   const pathnameIsMissingLocale = locales.every(
-    (locale) => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
+    (locale) =>
+      !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`,
   );
 
   if (pathnameIsMissingLocale) {
@@ -34,7 +35,7 @@ export function middleware(request: NextRequest) {
     // e.g. incoming request is /about
     // Tell Next.js it should pretend it's /en/about
     return NextResponse.rewrite(
-      new URL(`/${fallbackLng}${pathname}`, request.url)
+      new URL(`/${fallbackLng}${pathname}`, request.url),
     );
   }
 }

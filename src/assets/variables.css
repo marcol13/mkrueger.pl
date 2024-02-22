@@ -4,13 +4,13 @@
 
 :root {
   /* Colors */
-  --color-ivory: #F2F2F2;
-  --color-charcoal: #0D0D0D;
-  --color-yellow: #F2CF1D;
-  --color-green: #17A68C;
-  --color-beige: #D9CA82;
-  --color-box-dark: #1E293B;
-  --color-box-light: #F1F5F9;
+  --color-ivory: #f2f2f2;
+  --color-charcoal: #0d0d0d;
+  --color-yellow: #f2cf1d;
+  --color-green: #17a68c;
+  --color-beige: #d9ca82;
+  --color-box-dark: #1e293b;
+  --color-box-light: #f1f5f9;
 
   /* Sizes */
   --navbar-height: 6rem;
@@ -18,19 +18,19 @@
 }
 
 html {
-    --color-background: var(--color-ivory);
-    --color-text: var(--color-charcoal);
-    --color-primary: var(--color-yellow);
-    --color-secondary: var(--color-green);
-    --color-accent: var(--color-beige);
-    --color-box: var(--color-box-light);
+  --color-background: var(--color-ivory);
+  --color-text: var(--color-charcoal);
+  --color-primary: var(--color-yellow);
+  --color-secondary: var(--color-green);
+  --color-accent: var(--color-beige);
+  --color-box: var(--color-box-light);
 }
 
 html.dark {
-    --color-background: var(--color-charcoal);
-    --color-text: var(--color-ivory);
-    --color-primary: var(--color-yellow);
-    --color-secondary: var(--color-green);
-    --color-accent: var(--color-beige);
-    --color-box: var(--color-box-dark);
+  --color-background: var(--color-charcoal);
+  --color-text: var(--color-ivory);
+  --color-primary: var(--color-yellow);
+  --color-secondary: var(--color-green);
+  --color-accent: var(--color-beige);
+  --color-box: var(--color-box-dark);
 }

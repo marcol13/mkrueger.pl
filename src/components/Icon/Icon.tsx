@@ -1,7 +1,7 @@
 import { MdSunny } from "react-icons/md";
 import { IoMdMoon } from "react-icons/io";
 import { IoCloseOutline } from "react-icons/io5";
-import { FaGithubSquare , FaLinkedin } from "react-icons/fa";
+import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { RxHamburgerMenu } from "react-icons/rx";
 
@@ -12,7 +12,7 @@ const iconVariants = {
   linkedin: FaLinkedin,
   twitter: FaSquareXTwitter,
   hamburger: RxHamburgerMenu,
-  close: IoCloseOutline
+  close: IoCloseOutline,
 };
 
 const colorVariants = {
@@ -22,7 +22,7 @@ const colorVariants = {
   primary: "text-primary",
   secondary: "text-secondary",
   accent: "text-red-700",
-  content: "text-content"
+  content: "text-content",
 };
 
 const sizeVariants = {
@@ -39,12 +39,7 @@ type PropTypes = {
   className?: string;
 };
 
-export const Icon = ({
-  variant,
-  color,
-  size = "m",
-  className,
-}: PropTypes) => {
+export const Icon = ({ variant, color, size = "m", className }: PropTypes) => {
   const Component = iconVariants[variant];
   const styles = [color && colorVariants[color], className]
     .filter((el) => el !== undefined)
@@ -52,7 +47,7 @@ export const Icon = ({
 
   return (
     <span className={styles}>
-      <Component className={sizeVariants[size]}/>
+      <Component className={sizeVariants[size]} />
     </span>
   );
 };

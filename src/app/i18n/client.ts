@@ -1,13 +1,16 @@
-'use client';
+"use client";
 
-import {useEffect} from 'react';
-import i18next, {i18n} from 'i18next';
-import {initReactI18next, useTranslation as useTransAlias} from 'react-i18next';
-import resourcesToBackend from 'i18next-resources-to-backend';
-import LanguageDetector from 'i18next-browser-languagedetector';
-import {type LocaleTypes, getOptions, locales} from './settings';
+import { useEffect } from "react";
+import i18next, { i18n } from "i18next";
+import {
+  initReactI18next,
+  useTranslation as useTransAlias,
+} from "react-i18next";
+import resourcesToBackend from "i18next-resources-to-backend";
+import LanguageDetector from "i18next-browser-languagedetector";
+import { type LocaleTypes, getOptions, locales } from "./settings";
 
-const runsOnServerSide = typeof window === 'undefined';
+const runsOnServerSide = typeof window === "undefined";
 
 // Initialize i18next for the client side
 i18next
@@ -23,14 +26,14 @@ i18next
     ...getOptions(),
     lng: undefined, // detect the language on the client
     detection: {
-      order: ['path'],
+      order: ["path"],
     },
     preload: runsOnServerSide ? locales : [],
   });
 
 export function useTranslation(lng: LocaleTypes, ns: string, options?: any) {
   const translator = useTransAlias(ns, options);
-  const {i18n} = translator;
+  const { i18n } = translator;
 
   // Run when content is rendered on server side
   if (runsOnServerSide && lng && i18n.resolvedLanguage !== lng) {
@@ -51,4 +54,3 @@ function useCustomTranslationImplem(i18n: i18n, lng: LocaleTypes) {
     i18n.changeLanguage(lng);
   }, [lng, i18n]);
 }
-
