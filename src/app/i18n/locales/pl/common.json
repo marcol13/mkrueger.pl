@@ -13,16 +13,16 @@
   "about": {
     "hello": "Cześć!",
     "paragraphs": [
-      "Mam na imię Marcin i jestem Frontend Developerem oraz studentem Sztucznej Inteligencji stacjonującym w Poznaniu 🇵🇱.",
+      "Mam na imię Marcin i jestem <em>Frontend Developerem</em> oraz studentem <em>Sztucznej Inteligencji</em> stacjonującym w Poznaniu 🇵🇱.",
       "Interesuję się technologiami webowymi, rozwijaniem oprogramowania, tworzeniem stron internetowych, organizacją pracy w zespole, automatyzacją procesów oraz algorytmami sztucznej inteligencji (w szczególności Przetwarzania Języka Naturalnego) 💻.",
       "Prywatnie aktywny fan podróży 🗺, czytelnik reportaży 📚 oraz miłośnik wszystkiego związanego z Wyspami Owczymi 🐑.",
-      "W pracy cenię sobie kontakt z ludźmi, ciągły rozwój oraz regularny feedback. Pragnę zdobywać nowe umiejętności, nie tylko techniczne, ale i miękkie. Jestem otwarty na różne technologie, jednak najpewniej czuję się w:"
+      "W pracy cenię sobie <em>kontakt z ludźmi</em>, ciągły rozwój oraz regularny feedback. Pragnę zdobywać nowe umiejętności, nie tylko techniczne, ale i miękkie. Jestem otwarty na różne technologie, jednak najpewniej czuję się w:"
     ],
-    "about-first-p": "Mam na imię Marcin i jestem Frontend Developerem oraz studentem Sztucznej Inteligencji stacjonującym w Poznaniu 🇵🇱."
+    "contact-me": "Skontaktuj się ze mną"
   },
   "contact": {
     "message-header": "Pogadajmy o wszystkim!",
-    "message-subheader": "Nie lubisz formularzy? Napisz do mnie maila! 🥳",
+    "message-subheader": "Nie lubisz formularzy? Napisz do mnie <mail>maila</mail>! 🥳",
     "form": {
       "name": "Imię i nazwisko",
       "email": "Adres e-mail",

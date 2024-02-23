@@ -34,10 +34,11 @@ export const Navbar = () => {
   ];
 
   const mobileMenuStyles =
-    "absolute top-0 left-0 w-screen h-screen flex flex-col bg-white dark:bg-background z-50 items-center justify-center text-center md:static md:w-auto md:h-auto";
+    "absolute top-0 left-0 w-screen h-screen flex flex-col bg-background z-50 items-center justify-center text-center md:static md:w-auto md:h-auto";
 
+    // TODO: Motion reduce
   return (
-    <header className="fixed top-0 z-50 flex h-navbar-height w-screen items-center justify-between border-b-[1px] border-content bg-white px-4 md:justify-around md:px-0 dark:bg-background">
+    <header className="fixed top-0 z-50 flex h-navbar-height w-screen items-center justify-between border-b-[1px] border-content bg-background px-4 md:justify-around md:px-0">
       <div className="flex">
         <span className="flex items-center justify-center before:mr-2 before:block before:h-4 before:w-4 before:rounded-full before:bg-primary before:content-['']"></span>
         <Link href="#">
@@ -55,7 +56,7 @@ export const Navbar = () => {
         >
           <Icon variant="close" size="xl" />
         </Button>
-        <ul className="flex flex-col gap-20 md:flex-row md:gap-4">
+        <ul className="flex flex-col gap-20 md:flex-row md:gap-6">
           {links.map((link) => (
             <NavbarLink key={link.text} href={link.href} text={link.text} />
           ))}
@@ -68,7 +69,6 @@ export const Navbar = () => {
         <DarkModeSwitch />
         <LanguageSwitch className="hidden md:flex" />
         <Button
-          variant="header"
           onClick={() => setMenuOpen(true)}
           className="block md:hidden"
         >

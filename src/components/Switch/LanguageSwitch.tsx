@@ -8,6 +8,7 @@ import {
   useSelectedLayoutSegments,
 } from "next/navigation";
 import { locales } from "@/app/i18n/settings";
+import { Button } from "../Button/Button";
 
 type PropTypes = {
   className?: string;
@@ -34,34 +35,29 @@ export const LanguageSwitch = ({ className }: PropTypes) => {
   const router = useRouter();
 
   return (
-    <div className={`flex gap-2 ${className ? className : ""}`}>
-      <button
+    <div className={`flex rounded ring-1 shadow-zinc-800/5 shadow-lg border-none bg-white/90 dark:bg-box ${className ? className : ""}`}>
+      <Button
         onClick={() => {
           if (lang !== "pl") router.push(`/pl`);
           localStorage.setItem("lang", "pl");
           setLang("pl");
         }}
+        variant="switch"
+        className={`${lang === "pl" ? "text-white dark:text-black bg-secondary dark:bg-primary" : ""}`}
       >
-        <Image
-          src={poland}
-          alt="polish language picker"
-          className={`h-8 w-8 ${lang !== "pl" && inactive}`}
-        />
-      </button>
-      <span className="relative left-0 top-0 block w-[1px] bg-slate-400"></span>
-      <button
+        PL
+      </Button>
+      <Button
         onClick={() => {
           if (lang !== "en") router.push(`/en`);
           localStorage.setItem("lang", "en");
           setLang("en");
         }}
+        variant="switch"
+        className={`${lang === "en" ? "text-white dark:text-black bg-secondary dark:bg-primary" : ""}`}
       >
-        <Image
-          src={brittain}
-          alt="english language picker"
-          className={`h-8 w-8 ${lang !== "en" && inactive}`}
-        />
-      </button>
+        EN
+      </Button>
     </div>
   );
 };

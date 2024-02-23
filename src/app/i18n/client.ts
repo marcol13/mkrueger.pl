@@ -28,7 +28,7 @@ i18next
     detection: {
       order: ["path"],
     },
-    preload: runsOnServerSide ? locales : [],
+    preload: runsOnServerSide ? locales : []
   });
 
 export function useTranslation(lng: LocaleTypes, ns: string, options?: any) {

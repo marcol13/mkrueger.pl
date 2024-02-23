@@ -8,8 +8,8 @@ type PropTypes = {
 };
 
 const styles = {
-  common: "border-2 border-slate-2 bg-slate-100",
-  header: "ring-1 shadow-zinc-800/5 shadow-lg border-none bg-white/90",
+  common: "ring-1 shadow-zinc-800/5 shadow-lg border-none bg-slate-50",
+  switch: "font-bold text-slate-300 dark:text-slate-500",
 };
 
 export const Button = ({
@@ -21,7 +21,7 @@ export const Button = ({
   return (
     <button
       onClick={onClick}
-      className={`rounded p-2 dark:bg-box ${styles[variant]} ${className ?? ""}`}
+      className={`p-2 rounded dark:bg-box hover:scale-105 transition-transform ${styles[variant]} ${className ?? ""}`}
     >
       {children}
     </button>

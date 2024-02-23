@@ -4,13 +4,15 @@
 
 :root {
   /* Colors */
-  --color-ivory: #f2f2f2;
-  --color-charcoal: #0d0d0d;
+  --color-ivory: #F8F8F8;
+  --color-charcoal: #31333B;
   --color-yellow: #f2cf1d;
   --color-green: #17a68c;
   --color-beige: #d9ca82;
   --color-box-dark: #1e293b;
   --color-box-light: #f1f5f9;
+  --color-lightgrey: #B1BDCC;
+  --color-darkgrey: #454E56;
 
   /* Sizes */
   --navbar-height: 6rem;
@@ -24,6 +26,8 @@ html {
   --color-secondary: var(--color-green);
   --color-accent: var(--color-beige);
   --color-box: var(--color-box-light);
+  --color-grey-primary: var(--color-darkgrey);
+  --color-grey-secondary: var(--color-lightgrey);
 }
 
 html.dark {
@@ -33,4 +37,6 @@ html.dark {
   --color-secondary: var(--color-green);
   --color-accent: var(--color-beige);
   --color-box: var(--color-box-dark);
+  --color-grey-primary: var(--color-lightgrey);
+  --color-grey-secondary: var(--color-darkgrey);
 }

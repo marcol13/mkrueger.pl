@@ -6,6 +6,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: var(--color-background);
+}
+
 input:focus-visible,
 textarea:focus-visible {
   outline: none;
