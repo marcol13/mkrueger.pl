@@ -26,7 +26,7 @@ export const About = () => {
           />
         </div>
         <div className="flex flex-col gap-6">
-          <Text variant="h2" className="text-secondary dark:text-primary">
+          <Text variant="h2" className="text-primary">
             {t("about.hello")}
           </Text>
           <div className="flex flex-col gap-2">

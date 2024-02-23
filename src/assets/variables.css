@@ -22,8 +22,8 @@
 html {
   --color-background: var(--color-ivory);
   --color-text: var(--color-charcoal);
-  --color-primary: var(--color-yellow);
-  --color-secondary: var(--color-green);
+  --color-primary: var(--color-green);
+  --color-secondary: var(--color-yellow);
   --color-accent: var(--color-beige);
   --color-box: var(--color-box-light);
   --color-grey-primary: var(--color-darkgrey);

@@ -43,7 +43,7 @@ export const LanguageSwitch = ({ className }: PropTypes) => {
           setLang("pl");
         }}
         variant="switch"
-        className={`${lang === "pl" ? "text-white dark:text-black bg-secondary dark:bg-primary" : ""}`}
+        className={`${lang === "pl" ? "text-white dark:text-black bg-primary dark:bg-primary" : ""}`}
       >
         PL
       </Button>
@@ -54,7 +54,7 @@ export const LanguageSwitch = ({ className }: PropTypes) => {
           setLang("en");
         }}
         variant="switch"
-        className={`${lang === "en" ? "text-white dark:text-black bg-secondary dark:bg-primary" : ""}`}
+        className={`${lang === "en" ? "text-white dark:text-black bg-primary dark:bg-primary" : ""}`}
       >
         EN
       </Button>

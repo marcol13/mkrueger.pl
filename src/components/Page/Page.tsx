@@ -23,7 +23,7 @@ export const Page = ({
       {title && (
         <Text
           variant="h2"
-          className="relative mb-10 ml-6 text-secondary before:absolute before:-left-6 before:-top-2 before:-z-10 before:block before:h-[37px] before:w-[37px] before:bg-dots before:content-[''] md:mb-16 dark:text-primary"
+          className="relative mb-10 ml-6 text-primary before:absolute before:-left-6 before:-top-2 before:-z-10 before:block before:h-[37px] before:w-[37px] before:bg-dots before:content-[''] md:mb-16"
         >
           {title}
         </Text>

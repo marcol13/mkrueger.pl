@@ -29,6 +29,9 @@ const config: Config = {
         'dots': "url('icons/dots.svg')",
         'edu': "url('icons/education.svg')",
         'work': "url('icons/screen.svg')"
+      },
+      boxShadow: {
+        'bulb': '0 0 10px var(--color-primary), 0 0 15px var(--color-primary)'
       }
     },
   },

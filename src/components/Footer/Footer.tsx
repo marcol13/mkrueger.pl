@@ -15,7 +15,7 @@ export const Footer = () => {
               <Icon
                 variant="github"
                 size="l"
-                className="text-secondary dark:text-primary"
+                className="text-primary"
               />
             </Link>
           </li>
@@ -28,7 +28,7 @@ export const Footer = () => {
               <Icon
                 variant="linkedin"
                 size="l"
-                className="text-secondary dark:text-primary"
+                className="text-primary"
               />
             </Link>
           </li>
@@ -41,7 +41,7 @@ export const Footer = () => {
               <Icon
                 variant="twitter"
                 size="l"
-                className="text-secondary dark:text-primary"
+                className="text-primary"
               />
             </Link>
           </li>
@@ -53,7 +53,7 @@ export const Footer = () => {
           href="https://github.com/marcol13"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-secondary dark:text-primary"
+          className="text-primary"
         >
           @marcol13
         </Link>
