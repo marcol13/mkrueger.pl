@@ -20,9 +20,17 @@
     ],
     "contact-me": "Skontaktuj się ze mną"
   },
+  "experience": {
+    "education": "Wykształcenie",
+    "work": "Praca"
+  },
   "contact": {
     "message-header": "Pogadajmy o wszystkim!",
-    "message-subheader": "Nie lubisz formularzy? Napisz do mnie <mail>maila</mail>! 🥳",
+    "message-subheaders": [
+      "Nie lubisz formularzy? Napisz do mnie <mail>maila</mail>! 🥳",
+      "Dodaj mnie do swojej sieci na <linkedin>LinkedIn</linkedin>! 👨‍💻👩‍💻",
+      "Zobacz moje projekty na <github>GitHubie</github>! 🚀"
+    ],
     "form": {
       "name": "Imię i nazwisko",
       "email": "Adres e-mail",

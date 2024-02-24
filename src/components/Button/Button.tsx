@@ -8,7 +8,7 @@ type PropTypes = {
 };
 
 const styles = {
-  common: "ring-1 shadow-zinc-800/5 shadow-lg border-none bg-slate-50",
+  common: "ring-1 shadow-zinc-800/5 shadow-lg border-none bg-white",
   switch: "font-bold text-slate-300 dark:text-slate-500",
 };
 

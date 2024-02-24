@@ -11,7 +11,7 @@ import { Icon } from "../Icon/Icon";
 import Link from "next/link";
 
 export const Navbar = () => {
-  const t = useDictionary();
+  const {t} = useDictionary();
   const [menuOpen, setMenuOpen] = useState(false);
 
   const links = [

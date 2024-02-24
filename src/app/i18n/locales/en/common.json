@@ -20,9 +20,17 @@
     ],
     "contact-me": "Contact me"
   },
+  "experience": {
+    "education": "Education",
+    "work": "Work"
+  },
   "contact": {
     "message-header": "Let's talk about everything!",
-    "message-subheader": "Don't like forms? Write me an email! 🥳",
+    "message-subheaders": [
+      "Don't like forms? Write me an <mail>email</mail>! 🥳",
+      "Add me to your network on <linkedin>LinkedIn</linkedin>! 👨‍💻👩‍💻",
+      "See my projects on <github>GitHub</github>! 🚀"
+    ],
     "form": {
       "name": "Your name",
       "email": "E-mail address",

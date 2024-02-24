@@ -9,9 +9,10 @@
   --color-yellow: #f2cf1d;
   --color-green: #17a68c;
   --color-beige: #d9ca82;
+  --color-orange: #d59c29;
   --color-box-dark: #1e293b;
-  --color-box-light: #f1f5f9;
-  --color-lightgrey: #B1BDCC;
+  --color-box-light: #dfe4e9;
+  --color-lightgrey: #dee3e9;
   --color-darkgrey: #454E56;
 
   /* Sizes */
@@ -24,7 +25,7 @@ html {
   --color-text: var(--color-charcoal);
   --color-primary: var(--color-green);
   --color-secondary: var(--color-yellow);
-  --color-accent: var(--color-beige);
+  --color-accent: var(--color-orange);
   --color-box: var(--color-box-light);
   --color-grey-primary: var(--color-darkgrey);
   --color-grey-secondary: var(--color-lightgrey);
@@ -35,7 +36,7 @@ html.dark {
   --color-text: var(--color-ivory);
   --color-primary: var(--color-yellow);
   --color-secondary: var(--color-green);
-  --color-accent: var(--color-beige);
+  --color-accent: var(--color-orange);
   --color-box: var(--color-box-dark);
   --color-grey-primary: var(--color-lightgrey);
   --color-grey-secondary: var(--color-darkgrey);

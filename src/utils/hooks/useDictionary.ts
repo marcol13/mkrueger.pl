@@ -6,5 +6,5 @@ export const useDictionary = (dictionary: string = "common", options?: any) => {
   const locale = useParams()?.lang as LocaleTypes;
   const { t } = useTranslation(locale, dictionary);
 
-  return t;
+  return {t, locale};
 };

@@ -17,7 +17,7 @@ export const Page = ({
 }: PropTypes) => {
   return (
     <div
-      className={`${fullHeight ? "min-h-[calc(100vh_-_theme(spacing.navbar-height))]" : "mb-6 md:mb-10"} mt-navbar-height flex scroll-mt-navbar-height flex-col justify-center px-4 py-6 ${className ? className : ""}`}
+      className={`${fullHeight ? "min-h-[calc(100vh_-_theme(spacing.navbar-height))] mt-navbar-height" : "mb-6 md:mb-10 mt-8"}  flex flex-col scroll-mt-navbar-height justify-center px-4 py-6 ${className ? className : ""}`}
       id={id}
     >
       {title && (

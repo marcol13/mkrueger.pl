@@ -31,7 +31,8 @@ const config: Config = {
         'work': "url('icons/screen.svg')"
       },
       boxShadow: {
-        'bulb': '0 0 10px var(--color-primary), 0 0 15px var(--color-primary)'
+        'bulb': '0 0 10px var(--color-primary), 0 0 15px var(--color-primary)',
+        'footer': '0 -10px 20px #12110C'
       }
     },
   },

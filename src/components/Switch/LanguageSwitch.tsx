@@ -35,7 +35,7 @@ export const LanguageSwitch = ({ className }: PropTypes) => {
   const router = useRouter();
 
   return (
-    <div className={`flex rounded ring-1 shadow-zinc-800/5 shadow-lg border-none bg-white/90 dark:bg-box ${className ? className : ""}`}>
+    <div className={`flex rounded ring-1 shadow-zinc-800/5 shadow-lg border-none bg-white dark:bg-box ${className ? className : ""}`}>
       <Button
         onClick={() => {
           if (lang !== "pl") router.push(`/pl`);

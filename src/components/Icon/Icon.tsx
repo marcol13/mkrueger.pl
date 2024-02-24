@@ -1,11 +1,11 @@
 import { MdSunny } from "react-icons/md";
 import { IoMdMoon } from "react-icons/io";
 import { IoCloseOutline } from "react-icons/io5";
-import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
+import { FaGithubSquare, FaLinkedin, FaEnvelopeSquare } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { RxHamburgerMenu } from "react-icons/rx";
 
-const iconVariants = {
+export const iconVariants = {
   sun: MdSunny,
   moon: IoMdMoon,
   github: FaGithubSquare,
@@ -13,6 +13,7 @@ const iconVariants = {
   twitter: FaSquareXTwitter,
   hamburger: RxHamburgerMenu,
   close: IoCloseOutline,
+  mail: FaEnvelopeSquare
 };
 
 const colorVariants = {

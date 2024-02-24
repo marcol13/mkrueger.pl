@@ -1,7 +1,7 @@
 type PropTypes = {
   variant?: TextVariants;
   className?: string;
-  children: string | JSX.Element;
+  children: (string | JSX.Element)[] | string | JSX.Element;
 };
 type TextVariants = "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "p" | "span";
 
