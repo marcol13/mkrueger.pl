@@ -32,7 +32,7 @@ const config: Config = {
       },
       boxShadow: {
         'bulb': '0 0 10px var(--color-primary), 0 0 15px var(--color-primary)',
-        'footer': '0 -10px 20px #12110C',
+        'footer': '0 -5px 20px #12110C',
         'glass': '0 4px 30px rgba(0, 0, 0, 0.1)'
       }
     },

@@ -6,26 +6,26 @@ import Link from "next/link";
 
 const socialLinks: {href: string, icon: IconType}[] = [
   {
-    href: GITHUB,
-    icon: "github",
+    href: `mailto:${EMAIL}`,
+    icon: "mail",
   },
   {
     href: LINKEDIN,
     icon: "linkedin",
   },
   {
-    href: TWITTER,
-    icon: "twitter",
+    href: GITHUB,
+    icon: "github",
   },
   {
-    href: `mailto:${EMAIL}`,
-    icon: "mail",
+    href: TWITTER,
+    icon: "twitter",
   },
 ];
 
 export const Footer = () => {
   return (
-    <footer className="shadow-footer flex h-navbar-height flex-row-reverse items-center justify-around gap-2 bg-black text-background dark:text-content">
+    <footer className="shadow-footer flex flex-col p-8 md:p-0 gap-8 md:flex-row-reverse min-h-navbar-height items-center justify-around md:gap-2 bg-black text-background dark:text-content">
       <div>
         <ul className="flex list-none gap-2">
           {socialLinks.map((link) => (
