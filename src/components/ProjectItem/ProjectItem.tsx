@@ -23,13 +23,13 @@ export const ProjectItem = ({
 
   return (
     <div className={className}>
-      <div className="flex gap-2 border-2 bg-box p-2">
+      <div className="flex gap-2 rounded border-2 bg-box p-2">
         <Image
           src={defaultImage}
           alt={`Project ${title}`}
           width={256}
           height={256}
-          className="mr-8 hidden rounded-md md:block"
+          className="mr-8 hidden md:block"
           // placeholder="blur"
           // blurDataURL="../../assets/images/project-template.png"
           // onError={() => setImageSource("@/assets/images/project-template.png")}

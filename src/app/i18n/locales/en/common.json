@@ -18,11 +18,19 @@
       "Privately an active fan of travel 🗺, a reader of reportage 📚 and a lover of everything related to the Faroe Islands 🐑.",
       "In my work I value contact with people, continuous development and regular feedback. I want to learn new skills, not only technical but also soft skills. I am open to different technologies, however I am most comfortable in:"
     ],
-    "about-first-p": "My name is Marcin and I am a Frontend Developer and Artificial Intelligence student stationed in Poznan 🇵🇱."
+    "contact-me": "Contact me"
+  },
+  "experience": {
+    "education": "Education",
+    "work": "Work"
   },
   "contact": {
     "message-header": "Let's talk about everything!",
-    "message-subheader": "Don't like forms? Write me an email! 🥳",
+    "message-subheaders": [
+      "Don't like forms? Write me an <mail>email</mail>! 🥳",
+      "Add me to your network on <linkedin>LinkedIn</linkedin>! 👨‍💻👩‍💻",
+      "See my projects on <github>GitHub</github>! 🚀"
+    ],
     "form": {
       "name": "Your name",
       "email": "E-mail address",

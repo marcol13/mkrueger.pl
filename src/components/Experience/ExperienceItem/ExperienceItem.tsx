@@ -15,7 +15,7 @@ export const ExperienceItem = ({
 }: PropTypes) => {
   return (
     <li
-      className={`before:content[''] relative ml-10 list-none pb-6 pl-2 before:-left-8 before:block last:pb-2 ${blockType === "education" ? "before:bg-edu" : "before:bg-work"} after:content[''] before:absolute before:top-0 before:h-6 before:w-6 after:absolute after:-left-[1.3rem] after:bottom-1 after:top-6 after:block after:w-[2px] after:bg-secondary`}
+      className={`before:content[''] relative ml-10 list-none pb-6 pl-2 before:-left-[1.73rem] before:block before:shadow-bulb last:pb-2 before:bg-primary dark:before:bg-primary before:rounded-full after:content[''] before:absolute before:top-1 before:h-4 before:w-4 after:absolute after:-left-[1.3rem] after:bottom-0.5 after:top-6 after:block after:w-[2px] after:bg-primary`}
     >
       <Text>{name}</Text>
       <Text variant="h3">{position}</Text>

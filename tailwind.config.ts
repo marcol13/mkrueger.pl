@@ -14,7 +14,9 @@ const config: Config = {
         'primary': 'var(--color-primary)',
         'secondary': 'var(--color-secondary)',
         'accent': 'var(--color-accent)',
-        'box': 'var(--color-box)'
+        'box': 'var(--color-box)',
+        'grey-primary': 'var(--color-grey-primary)',
+        'grey-secondary': 'var(--color-grey-secondary)'
       },
       spacing: {
         'navbar-height': 'var(--navbar-height)',
@@ -27,6 +29,14 @@ const config: Config = {
         'dots': "url('icons/dots.svg')",
         'edu': "url('icons/education.svg')",
         'work': "url('icons/screen.svg')"
+      },
+      boxShadow: {
+        'bulb': '0 0 10px var(--color-primary), 0 0 15px var(--color-primary)',
+        'footer': '0 -5px 20px #12110C',
+        'glass': '0 4px 30px rgba(0, 0, 0, 0.1)'
+      },
+      transition: {
+        'opacity': 'opacity'
       }
     },
   },

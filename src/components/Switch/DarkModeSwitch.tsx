@@ -29,7 +29,6 @@ export const DarkModeSwitch = () => {
         setTheme(theme === "dark" ? "light" : "dark");
         setIsDarkMode((prev) => !prev);
       }}
-      variant="header"
     >
       <Icon
         variant={isDarkMode ? "sun" : "moon"}

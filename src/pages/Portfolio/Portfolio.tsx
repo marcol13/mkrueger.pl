@@ -7,7 +7,7 @@ import { useDictionary } from "@/utils/hooks/useDictionary";
 import projects from "@/../public/projects.json";
 
 export const Portfolio = () => {
-  const t = useDictionary();
+  const {t} = useDictionary();
 
   return (
     <Page id="projects" title={t("sections.projects")}>
