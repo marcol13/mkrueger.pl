@@ -11,7 +11,7 @@ import { Icon } from "../Icon/Icon";
 import Link from "next/link";
 
 export const Navbar = () => {
-  const {t} = useDictionary();
+  const { t } = useDictionary();
   const [menuOpen, setMenuOpen] = useState(false);
 
   const links = [
@@ -33,14 +33,22 @@ export const Navbar = () => {
     },
   ];
 
-  const mobileMenuStyles =
-    "absolute top-0 left-0 w-screen h-screen flex flex-col bg-background z-50 items-center justify-center text-center md:static md:w-auto md:h-auto";
+  const transitionStyles = {
+    mobileTransformOpen: "scale-y-100 [transition:transform_0.3s_ease-in-out]",
+    mobileTransformClose:
+      "scale-y-0 [transition:transform_0.3s_ease-in-out_0.4s]",
+    mobileOpacityOpen: "opacity-100 [transition:opacity_0.2s_linear_0.4s]",
+    mobileOpacityClose: "opacity-0 [transition:opacity_0.2s_linear]",
+  };
 
-  const glassEffectStyles = "shadow-glass backdrop-filter backdrop-blur-md bg-opacity-10 dark:bg-opacity-10";
+  const glassEffectStyles =
+    "shadow-glass backdrop-filter backdrop-blur-md bg-opacity-10 dark:bg-opacity-10";
 
-    // TODO: Motion reduce
+  // TODO: Motion reduce
   return (
-    <header className={`fixed top-0 z-50 flex h-navbar-height w-screen items-center justify-between bg-white dark:bg-black px-4 md:justify-around md:px-0 ${glassEffectStyles}`}>
+    <header
+      className={`fixed top-0 z-50 flex h-navbar-height w-screen items-center justify-between bg-white px-4 md:justify-around md:px-0  dark:bg-black ${glassEffectStyles}`}
+    >
       <div className="flex">
         <span className="flex items-center justify-center before:mr-2 before:block before:h-4 before:w-4 before:rounded-full before:bg-primary before:content-['']"></span>
         <Link href="#">
@@ -49,16 +57,12 @@ export const Navbar = () => {
           </Text>
         </Link>
       </div>
-      <nav className={`${menuOpen ? mobileMenuStyles : "hidden"} md:block`}>
-        <Button
-          className="absolute left-10 top-10 block border-none bg-transparent md:hidden"
-          onClick={() => {
-            setMenuOpen(false);
-          }}
+      <nav
+        className={`${menuOpen ? transitionStyles.mobileTransformOpen : transitionStyles.mobileTransformClose} absolute left-0 top-0 z-50 md:transition-none flex h-screen w-screen origin-top items-center justify-center bg-background md:static md:block md:h-auto md:w-auto md:scale-y-100 md:bg-transparent md:opacity-100`}
+      >
+        <ul
+          className={`${menuOpen ? transitionStyles.mobileOpacityOpen : transitionStyles.mobileOpacityClose} flex flex-col items-center justify-center gap-10 text-center md:flex-row md:gap-6 md:opacity-100`}
         >
-          <Icon variant="close" size="xl" />
-        </Button>
-        <ul className="flex flex-col gap-20 md:flex-row md:gap-6">
           {links.map((link) => (
             <NavbarLink key={link.text} href={link.href} text={link.text} />
           ))}
@@ -71,11 +75,11 @@ export const Navbar = () => {
         <DarkModeSwitch />
         <LanguageSwitch className="hidden md:flex" />
         <Button
-          onClick={() => setMenuOpen(true)}
-          className="block md:hidden"
+          onClick={() => setMenuOpen(!menuOpen)}
+          className="z-[51] block md:hidden"
         >
           <Icon
-            variant="hamburger"
+            variant={menuOpen ? "close" : "hamburger"}
             size="l"
             className="text-slate-300 dark:text-slate-500"
           />
