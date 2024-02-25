@@ -36,9 +36,11 @@ export const Navbar = () => {
   const mobileMenuStyles =
     "absolute top-0 left-0 w-screen h-screen flex flex-col bg-background z-50 items-center justify-center text-center md:static md:w-auto md:h-auto";
 
+  const glassEffectStyles = "shadow-glass backdrop-filter backdrop-blur-md bg-opacity-10 dark:bg-opacity-10";
+
     // TODO: Motion reduce
   return (
-    <header className="fixed top-0 z-50 flex h-navbar-height w-screen items-center justify-between border-b-[1px] border-content bg-background px-4 md:justify-around md:px-0">
+    <header className={`fixed top-0 z-50 flex h-navbar-height w-screen items-center justify-between bg-white dark:bg-black px-4 md:justify-around md:px-0 ${glassEffectStyles}`}>
       <div className="flex">
         <span className="flex items-center justify-center before:mr-2 before:block before:h-4 before:w-4 before:rounded-full before:bg-primary before:content-['']"></span>
         <Link href="#">
