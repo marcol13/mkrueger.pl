@@ -13,9 +13,9 @@ import {
   LINKEDIN,
   LINKEDIN_EN,
   GITHUB,
-  TWITTER,
-  HASHNODE,
 } from "@/utils/constants";
+import { useRef, MouseEvent } from "react";
+
 
 const ContactLink = ({
   children,
@@ -33,6 +33,30 @@ const ContactLink = ({
 
 export const Contact = () => {
   const { t, locale } = useDictionary();
+
+  const refName = useRef<HTMLInputElement>(null);
+  const refEmail = useRef<HTMLInputElement>(null);
+  const refTopic = useRef<HTMLInputElement>(null);
+  const refContent = useRef<HTMLTextAreaElement>(null);
+
+  const submitForm = (e: MouseEvent<HTMLElement>) => {
+    e.preventDefault()
+
+    const data = {
+      name: refName?.current?.value ?? "",
+      email: refEmail?.current?.value ?? "",
+      topic: refTopic?.current?.value ?? "",
+      content: refContent?.current?.value ?? ""
+    }
+    console.log(data)
+
+    fetch("/api/email", {
+      method: "POST",
+      body: JSON.stringify({
+        ...data
+      })
+    }).then(res => console.log(res)).catch(err => console.error(err))
+  }
 
   return (
     <Page id="contact" title={t("sections.contact")}>
@@ -61,19 +85,21 @@ export const Contact = () => {
         </div>
         <form className="p-4">
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-            <Input label={t("contact.form.name")} />
-            <Input label={t("contact.form.email")} type="email" />
+            <Input label={t("contact.form.name")} ref={refName} />
+            <Input label={t("contact.form.email")} type="email" ref={refEmail} />
             <Input
               label={t("contact.form.subject")}
               className="col-start-1 md:col-end-3"
+              ref={refTopic}
             />
             <Input
               label={t("contact.form.message")}
               type="longText"
               className="col-start-1 md:col-end-3"
+              ref={refContent}
             />
           </div>
-          <Button className="mt-4 font-semibold dark:text-accent">
+          <Button className="mt-4 font-semibold dark:text-accent" onClick={(e) => submitForm(e)}>
             {t("contact.form.submit")}
           </Button>
         </form>
